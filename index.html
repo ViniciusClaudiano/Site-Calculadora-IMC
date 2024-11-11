@@ -11,7 +11,7 @@
 <body>
     <header>
         <h1>Índice de Massa Corporal </h1>
-        <button>Dark mode</button>
+        <button onclick="mudarCor()">Dark mode</button>
         <nav>
             <ul>
                 <li><a href="#text">O que é o IMC</a></li>
@@ -169,7 +169,8 @@
         }
 
         function mudarCor() {
-            const color = document
+            document.body.style.backgroundColor = document.body.style.backgroundColor === 'white' ? 'black' : 'white';
+            document.body.style.color = document.body.style.color === 'black' ? 'white' : 'black';
         }
 
 
